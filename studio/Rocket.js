@@ -2,14 +2,12 @@
 exports.__esModule = true;
 exports.Rocket = void 0;
 var Rocket = /** @class */ (function () {
-    function Rocket() {
+    function Rocket(name, totalCapacityKg) {
         this.cargoItems = [];
         this.astronauts = [];
-    }
-    Rocket.prototype.Constructor = function (name, totalCapacityKg) {
         this.name = name;
         this.totalCapacityKg = totalCapacityKg;
-    };
+    }
     Rocket.prototype.sumMass = function (items) {
         var sum = 0;
         for (var i = 0; i < items.length; i++) {
@@ -32,7 +30,7 @@ var Rocket = /** @class */ (function () {
     };
     Rocket.prototype.addAstronaut = function (astronaut) {
         if (this.canAdd(astronaut)) {
-            this.astronaut.push(astronauts);
+            this.astronauts.push(astronaut);
             return true;
         }
         return false;
@@ -40,4 +38,3 @@ var Rocket = /** @class */ (function () {
     return Rocket;
 }());
 exports.Rocket = Rocket;
-;

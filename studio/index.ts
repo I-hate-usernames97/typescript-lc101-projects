@@ -8,7 +8,7 @@ import { Astronaut } from './Astronaut';
 import { Cargo } from './Cargo';
 import { Rocket } from './Rocket';
 
-let falcon9: Rocket = new Rocket('Falcon 9', 7500);
+let falcon9: Rocket = new Rocket("Falcon 9", 7500);
 
 let astronauts: Astronaut[] = [
    new Astronaut(75, 'Mae'),

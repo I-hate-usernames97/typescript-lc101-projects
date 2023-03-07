@@ -8,7 +8,7 @@ exports.__esModule = true;
 var Astronaut_1 = require("./Astronaut");
 var Cargo_1 = require("./Cargo");
 var Rocket_1 = require("./Rocket");
-var falcon9 = new Rocket_1.Rocket('Falcon 9', 7500);
+var falcon9 = new Rocket_1.Rocket("Falcon 9", 7500);
 var astronauts = [
     new Astronaut_1.Astronaut(75, 'Mae'),
     new Astronaut_1.Astronaut(81, 'Sally'),

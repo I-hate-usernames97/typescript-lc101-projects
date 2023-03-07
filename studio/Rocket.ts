@@ -1,18 +1,18 @@
-import {Astronaut} from './Astronaut';
-import {Cargo} from './Cargo';
-import {Payload} from './Payload';
+import { Astronaut } from './Astronaut';
+import { Cargo } from './Cargo';
+import { Payload } from './Payload';
 
+export class Rocket {
 
-export class Rocket{
-name: string;
-totalCapacityKg: number;
-cargoItems: Cargo[] = [];
-astronauts: Astronaut[] = [];
+  name: string;
+  totalCapacityKg: number;
+  cargoItems: Cargo[] = [];
+  astronauts: Astronaut[] = [];
 
-Constructor (name: string, totalCapacityKg: number){
-this.name = name;
-this.totalCapacityKg = totalCapacityKg;
-}
+  constructor (name: string, totalCapacityKg: number){
+    this.name = name;
+    this.totalCapacityKg = totalCapacityKg;
+  }  
 
   sumMass (items: Payload[]): number{
     let sum = 0;
@@ -40,12 +40,12 @@ this.totalCapacityKg = totalCapacityKg;
 
   addAstronaut(astronaut: Astronaut): boolean{
     if (this.canAdd(astronaut)){
-     this.astronaut.push(astronauts);
+     this.astronauts.push(astronaut)
       return true
       }
       return false
   }
 
-};
+}
 
 
